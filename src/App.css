@@ -1,4 +1,4 @@
-h1 {
+h1, h4 {
   margin:0;
 }
 
@@ -6,6 +6,7 @@ h1 {
   text-align: center;
   background-color: #282c34;
   height: 100vh;
+  min-width: 500px;
 }
 
 .App-header {
@@ -50,4 +51,95 @@ h1 {
   touch-action: manipulation;
   width: auto;
 }
+
+.Button-bar {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  height: 30px;
+}
+
+.Button-bar-text {
+  color: white;
+  height: 30px;
+  width: 50%;
+  text-align: left;
+}
+
+.Button-bar-buttons {
+  height: 30px;
+  width: 50%;
+  text-align: right;
+}
+
+.Button-bar-text-text {
+  font-size: x-large;
+}
+
+.Button-bar-buttons-button {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .1rem 0.6rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  touch-action: manipulation;
+  width: auto;
+  margin-right: 10px;
+}
+
+.page-title {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 3vmin);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.login-form-input {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 16px;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+
+ .login-form-text {
+  color: #f5f5f5;
+  font-size: 20px;
+  margin-right: 1rem;
+  margin-top: 20px;
+  text-align: right;
+ }
+
+ .login-form-div {
+  display:flex;
+  margin-bottom: 10px;
+ }
+
+ .login-form-item-div-left{
+  width: 50%;
+  text-align: right;
+  padding-top: 10px;
+ }
+
+ .login-form-item-div-right{
+  width: 50%;
+  text-align: left;
+ }
 

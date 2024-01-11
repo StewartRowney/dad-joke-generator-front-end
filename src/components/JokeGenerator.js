@@ -12,7 +12,6 @@ const JokeGenerator = () => {
       }})
       .then(r => r.json())
       .then(response => {
-        console.log(response);
         setJoke(response.joke, console.log(response.joke));
       })
       .catch(rejected => {
