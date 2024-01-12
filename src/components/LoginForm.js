@@ -5,12 +5,12 @@ import AuthContext from "../AuthContext";
 const LoginForm = () => {
 
     const [currentName, setCurrentName] = useState("");
-    const nameState = useContext(AuthContext);
+    const {name, setName} = useContext(AuthContext);
 
     const login = () => {
         if (currentName) {
             console.log(currentName)
-            nameState[1](currentName);
+            setName(currentName);
         }
     };
 

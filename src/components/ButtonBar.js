@@ -5,13 +5,13 @@ import { useContext } from "react";
 
 const ButtonBar = () => {
 
-    const nameState = useContext(AuthContext);
+    const {name, setName} = useContext(AuthContext);
 
     return (
         <>
             <div className="Button-bar">
                 <div className="Button-bar-text">
-                    <h4 className="Button-bar-text-text">{nameState[0]}</h4>
+                    <h4 className="Button-bar-text-text">{name}</h4>
                 </div>
                 <div className="Button-bar-buttons">
                     <Link to="/" className="Button-bar-buttons-button">Home</Link>

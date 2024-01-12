@@ -9,10 +9,10 @@ import AuthContext from './AuthContext';
 
 export default function App() {
 
-  const nameState = useState("Guest");
+  const [name, setName] = useState("Guest");
 
   return (
-    <AuthContext.Provider value={nameState}>
+    <AuthContext.Provider value={{name, setName}}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ButtonBar/>}>
