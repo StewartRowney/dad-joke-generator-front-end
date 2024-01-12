@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import AuthContext from "../AuthContext";
 
-const LoginForm = (props) => {
+const LoginForm = () => {
 
     const [currentName, setCurrentName] = useState("");
+    const nameState = useContext(AuthContext);
 
     const login = () => {
         if (currentName) {
             console.log(currentName)
-            props.setName(currentName);
+            nameState[1](currentName);
         }
     };
 
